@@ -181,17 +181,6 @@ Main CSS variables in `style.css`:
 - **Permission-based**: Location access requires user consent
 - **No Tracking**: No analytics or tracking scripts
 
-## 🛣️ Roadmap
-
-### Upcoming Features
-
-- [ ] **5-Day Forecast** - Extended weather predictions
-- [ ] **Multiple Locations** - Save favorite cities
-- [ ] **Weather Alerts** - Severe weather notifications
-- [ ] **Theme Customization** - Dark/light mode toggle
-- [ ] **Offline Support** - Basic functionality without internet
-- [ ] **Weather Maps** - Interactive weather visualization
-
 ### Improvements
 
 - [ ] **Performance Optimization** - Faster loading times
