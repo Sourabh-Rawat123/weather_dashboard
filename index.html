@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="wrapper">
+    <h1>Weather App</h1>
+    <div class="tab-container">
+      <div id="your_w">Your Weather</div>
+      <div id="search_w">Search Weather</div>
+      <div class="w-container">
+        <!-- grant location continer -->
+        <div class="grant_location">
+          <img src="./assets/location.png" alt="" width="80" height="80" loading="lazy" />
+          <p>Grant Loaction Acess</p>
+          <p>Alow Acess To get Weather information</p>
+          <button class="btn" data-grantAcess type="submit">
+            Grant Acess
+          </button>
+        </div>
+        <!--Search Weather of my location app-->
+        <div class="search_Weather">
+          <form action="" class="form_cont">
+            <input type="text" id="search_city" placeholder="Search for City..." autocomplete="off" />
+            <button class="btn" data-search-btn>
+              <img src="./assets/search.png" alt="" height="15" width="15" loading="lazy" />
+            </button>
+          </form>
+        </div>
+        <!--Loading Screen-->
+        <div class="loading-s">
+          <img src="./assets/download.gif" alt="" width="150" height="150" />
+          <p>Loading</p>
+        </div>
+
+        <!--Show Weather -->
+        <div class="user-info-container">
+          <!--city naem and flag-->
+          <div class="name">
+            <p id="city-name"></p>
+            <img src="" alt="" id="data_con_icon" />
+          </div>
+          <!--Data Description-->
+          <p id="data_weather_desc"></p>
+          <!--Weather Icon-->
+          <img data-weather-icon="" src="" alt="Weather Icon" />
+          <!--Temp-->
+          <p data-temp></p>
+          <!--Cards Div-->
+          <div class="parameter_container">
+            <div class="param">
+              <img src="./assets/cloud.png" alt="" loading="lazy" />
+              <p>Wind Speed</p>
+              <p data-windspeed></p>
+            </div>
+            <div class="param">
+              <img src="./assets/humidity.png" alt="" loading="lazy" />
+              <p>humidity</p>
+              <p data-humidity></p>
+            </div>
+            <div class="param">
+              <img src="./assets/clouds.png" alt="" loading="lazy" />
+              <p>Cloudiness</p>
+              <p data-cloudiness></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+</body>
+<script src="script.js"></script>
+
+</html>
